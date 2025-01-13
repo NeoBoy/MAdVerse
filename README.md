@@ -71,10 +71,10 @@ Here are the checkpoints for classifiers, top two performers from leaf-only and 
 
 | Architecture                      | Backbone | Loss               | Link |
 |-----------------------------------|----------|--------------------|------|
-| Leaf Only                         | BLIP-2   | Semantic embedding | [blip2-lo-BD](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/amruth_sagar_research_iiit_ac_in/Ef01PpaegrdFv-d5h9X6wL8BNo7aKqElg9gXsngW_EWIQw?download=1) |
-| Leaf Only                         | BLIP-2   | Soft labels        | [blip2-lo-SL](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/amruth_sagar_research_iiit_ac_in/EfdP4Bt9w15Imh8iCcwtKkABIMpjWHkfy93-aZ196d4Oyg?download=1) |
-| Multi level                       | BLIP-2   | Sum CE             | [blip2-ml-sCE](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/amruth_sagar_research_iiit_ac_in/Ea2y1RYmDZxDqr4zxunp3zIBuLO_NMn8-17ZCPZvzoDhsA?download=1) |
-| Multi level (with feature fusion) | BLIP-2   | Sum CE             | [blip2-mlFF-sCE](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/amruth_sagar_research_iiit_ac_in/EeZgxjNM0KZBs_t0MW1I1acBK03K-GkiWCJomzkwPRt8ZQ?download=1) |
+| Leaf Only                         | BLIP-2   | Semantic embedding | [blip2-lo-BD](https://iiithydresearch-my.sharepoint.com/:u:/g/personal/amruth_sagar_research_iiit_ac_in/ESSrSM30YpdEoluTFomV9KUBcUW75txnbJCGqaHcGO4NDg?download=1) |
+| Leaf Only                         | BLIP-2   | Soft labels        | [blip2-lo-SL](https://iiithydresearch-my.sharepoint.com/:u:/g/personal/amruth_sagar_research_iiit_ac_in/EQ3sckG6tU5MtJDlPJT7j9UBZaF6aB4wZiMXyhIphnF2Vw?download=1) |
+| Multi level                       | BLIP-2   | Sum CE             | [blip2-ml-sCE](https://iiithydresearch-my.sharepoint.com/:u:/g/personal/amruth_sagar_research_iiit_ac_in/ETis117vXe5IhA3tNqHhwswB02dLOiBojhVSi6MiP0vMlQ?download=1) |
+| Multi level (with feature fusion) | BLIP-2   | Sum CE             | [blip2-mlFF-sCE](https://iiithydresearch-my.sharepoint.com/:u:/g/personal/amruth_sagar_research_iiit_ac_in/EXI4e8DS87ZNuoy6UDg7bpwBwQzFUgKaExVIldWszsUKHQ?download=1) |
 
 
 ## :desktop_computer: Training your own hierarchical classifier
