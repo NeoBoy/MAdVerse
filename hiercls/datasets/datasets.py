@@ -42,6 +42,12 @@ class BaseDataset(Dataset):
         else:
             with open(Path(dataset_config.annot_dir) / self.hier_annot_file, "r") as infile:
                 self.images_and_hier_labels = infile.read().splitlines()
+        
+        ## SAB_Update:2025-05-05
+        # Normalize all image paths to POSIX (Linux) style
+        for i, annot in enumerate(self.images_and_hier_labels):
+            if isinstance(annot[0], str):
+                self.images_and_hier_labels[i][0] = annot[0].replace('\\', '/')
 
         random.seed(self.seed)
         random.shuffle(self.images_and_hier_labels)
@@ -57,13 +63,19 @@ class MAdVerseDataset(BaseDataset):
 
     def __getitem__(self, index):
         annotation = self.images_and_hier_labels[index]
-        image_path = Path(annotation[0])
-
+        # image_path = Path(annotation[0])
+        
+        # Always normalize path as string
+        image_path = str(annotation[0]).replace('\\', '/')
+        print("Image path:", image_path)
+        
         level_wise_labels = annotation[1:]
 
         try:
+            print("Trying to read image:", image_path)  # Add this line
+            
             image = cv2.cvtColor(
-                cv2.imread(image_path.as_posix(), cv2.IMREAD_COLOR), cv2.COLOR_BGR2RGB
+                cv2.imread(image_path, cv2.IMREAD_COLOR), cv2.COLOR_BGR2RGB
             )
         except:
             print(image_path)
